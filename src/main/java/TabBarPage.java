@@ -3,11 +3,12 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
 public class TabBarPage {
-    WebDriver driver;
 
-    By searchLocator = By.id("searchData");
+    private final WebDriver driver;
 
-    By totalNumLocator = By.className("basketTotalNum ");
+    private final By searchLocator = By.id("searchData");
+
+    private final By totalNumLocator = By.className("basketTotalNum");
 
 
     public TabBarPage(WebDriver driver){
